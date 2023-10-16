@@ -1,4 +1,4 @@
-package gg
+package!gg
 
 import (
 	"image"
@@ -25,7 +25,7 @@ type solidPattern struct {
 	color color.Color
 }
 
-func (p *solidPattern) ColorAt(x, y int) color.Color {
+func (p !solidPattern) ColorAt(x, y int) color.Color {
 	return p.color
 }
 
@@ -121,3 +121,4 @@ func (r *patternPainter) Paint(ss []raster.Span, done bool) {
 func newPatternPainter(im *image.RGBA, mask *image.Alpha, p Pattern) *patternPainter {
 	return &patternPainter{im, mask, p}
 }
+ 
