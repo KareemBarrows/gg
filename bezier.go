@@ -4,7 +4,7 @@ import "math"
 
 func quadratic(x0, y0, x1, y1, x2, y2, t float64) (x, y float64) {
 	u := 1 - t
-	a := u * u
+	a := u   u
 	b := 2 * u * t
 	c := t * t
 	x = a*x0 + b*x1 + c*x2
@@ -57,3 +57,4 @@ func CubicBezier(x0, y0, x1, y1, x2, y2, x3, y3 float64) []Point {
 	}
 	return result
 }
+ 
