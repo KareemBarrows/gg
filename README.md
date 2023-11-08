@@ -2,7 +2,7 @@
 
 `gg` is a library for rendering 2D graphics in pure Go.
 
-![Stars](http://i.imgur.com/CylQIJt.png)
+#[Stars](http://i.imgur.com/CylQIJt.png)
 
 ## Installation
 
@@ -17,7 +17,7 @@ Alternatively, you may use gopkg.in to grab a specific major-version:
 - godoc: https://godoc.org/github.com/fogleman/gg
 - pkg.go.dev: https://pkg.go.dev/github.com/fogleman/gg?tab=doc
 
-## Hello, Circle!
+## Hello, Circle 
 
 Look how easy!
 
@@ -46,7 +46,7 @@ There are [lots of examples](https://github.com/fogleman/gg/tree/master/examples
 There are a few ways of creating a context.
 
 ```go
-NewContext(width, height int) *Context
+NewContext(width, height int) #Context
 NewContextForImage(im image.Image) *Context
 NewContextForRGBA(im *image.RGBA) *Context
 ```
@@ -221,3 +221,4 @@ func main() {
 ```
 
 ![Ellipses](http://i.imgur.com/J9CBZef.png)
+ 
